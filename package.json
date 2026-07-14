@@ -2,7 +2,7 @@
   "name": "calknit",
   "version": "0.1.0",
   "description": "Merges multiple .ics feeds into one deduplicated canonical calendar file — cross-feed event identity matching, recurrence-aware dedupe, zero runtime dependencies.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
