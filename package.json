@@ -1,0 +1,55 @@
+{
+  "name": "calknit",
+  "version": "0.1.0",
+  "description": "Merges multiple .ics feeds into one deduplicated canonical calendar file — cross-feed event identity matching, recurrence-aware dedupe, zero runtime dependencies.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "calknit": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "docs/matching.md",
+    "docs/canonical-format.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "ical",
+    "ics",
+    "calendar",
+    "merge",
+    "dedupe",
+    "rrule",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/calknit.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/calknit#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/calknit/issues"
+  }
+}

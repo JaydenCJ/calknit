@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="428" viewBox="0 0 760 428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <rect width="760" height="428" rx="10" fill="#0d1117"/>
+  <rect width="760" height="34" rx="10" fill="#161b22"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="17" r="6" fill="#28c840"/>
+  <text x="380" y="21" fill="#8b949e" text-anchor="middle">calknit — knit many .ics feeds into one clean calendar</text>
+
+  <text x="24" y="64" fill="#7ee787">$ calknit merge work.ics personal.ics team-export.ics -o all.ics</text>
+  <text x="24" y="88" fill="#c9d1d9">calknit 0.1.0 — knitted 3 feeds</text>
+  <text x="24" y="108" fill="#c9d1d9">  input:  15 events (work.ics 5, personal.ics 5, team-export.ics 5)</text>
+  <text x="24" y="128" fill="#c9d1d9">  identity: <tspan fill="#79c0ff">1 uid duplicate</tspan>, <tspan fill="#79c0ff">3 fingerprint duplicates</tspan>, <tspan fill="#d2a8ff">3 flattened instances absorbed</tspan></text>
+  <text x="24" y="148" fill="#c9d1d9">  filled: DESCRIPTION&lt;personal.ics, LOCATION&lt;work.ics</text>
+  <text x="24" y="168" fill="#c9d1d9">  conflicts: 2 (freshest copy kept; see `calknit explain`)</text>
+  <text x="24" y="188" fill="#c9d1d9">  output: <tspan fill="#3fb950">8 events</tspan>, 2 timezones</text>
+
+  <text x="24" y="222" fill="#7ee787">$ calknit explain work.ics personal.ics team-export.ics</text>
+  <text x="24" y="246" fill="#c9d1d9">= merged (fingerprint): "Quarterly planning" 2026-07-15 14:00 @Europe/Berlin</text>
+  <text x="24" y="266" fill="#c9d1d9">    kept    work.ics  uid qplan-q3@example.test <tspan fill="#8b949e">seq 2</tspan></text>
+  <text x="24" y="286" fill="#c9d1d9">    dropped personal.ics  uid 040000008200E00074C5B7101A82E008...</text>
+  <text x="24" y="306" fill="#c9d1d9">    filled  <tspan fill="#3fb950">DESCRIPTION&lt;personal.ics</tspan></text>
+  <text x="24" y="326" fill="#c9d1d9">= absorbed by series team-sync-2026@example.test: "Team sync"</text>
+  <text x="24" y="346" fill="#c9d1d9">    2026-07-20 09:30 @Europe/Berlin from team-export.ics <tspan fill="#d2a8ff">(occurrence local:20260720T093000…)</tspan></text>
+
+  <text x="24" y="380" fill="#8b949e">deterministic output · recurrence-aware · offline · zero runtime dependencies</text>
+  <text x="24" y="404" fill="#3fb950">SMOKE OK</text>
+</svg>
